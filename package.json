@@ -1,0 +1,26 @@
+{
+  "name": "ts-fetch",
+  "version": "1.0.0",
+  "description": "ts example app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others npm:watch npm:start",
+    "build": "rimraf ./build && tsc",
+    "start": "nodemon build/index.js",
+    "watch": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/faker": "^4.1.5",
+    "axios": "^0.19.0",
+    "concurrently": "^4.1.2",
+    "faker": "^4.1.0",
+    "nodemon": "^1.19.1",
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}
