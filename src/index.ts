@@ -1,9 +1,14 @@
 import { Sorter } from './sorter'
 import { NumbersCollection } from './NumbersCollection'
+import { CharactersCollection } from './CharactersCollection'
 
 const numbersCollection = new NumbersCollection([0, 6, 8, 3])
-const sorter = new Sorter(numbersCollection)
+const charCollection = new CharactersCollection('sdfsdfsasadasd')
+const sorterNum = new Sorter(numbersCollection)
+const sorterChar = new Sorter(charCollection)
 
-sorter.sort()
+sorterNum.sort()
+sorterChar.sort()
 
 console.log(numbersCollection.data)
+console.log(charCollection.data)
