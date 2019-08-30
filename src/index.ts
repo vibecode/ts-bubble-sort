@@ -12,13 +12,9 @@ linkedList.add(-10)
 linkedList.add(200)
 linkedList.add(123)
 
-const sorterNum = new Sorter(numbersCollection)
-const sorterChar = new Sorter(charCollection)
-const sorterLinkedList = new Sorter(linkedList)
-
-sorterNum.sort()
-sorterChar.sort()
-sorterLinkedList.sort()
+numbersCollection.sort()
+charCollection.sort()
+linkedList.sort()
 
 console.log(numbersCollection.data)
 console.log(charCollection.data)
